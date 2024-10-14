@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    
+</head>
+<body>
+    <div>
+        <h1>Cadastro de usuário</h1>
+        <p>Insira suas informações:</p>
+    </div>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>CPF</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <label for="funcao">Selecione sua função:</label>
+            <select id="funcao" name="funcao">
+                <option value="usuario">Usuário</option>
+                <option value="gerente">Gerente</option>
+                <option value="administrador">Administrador</option>
+            </select>
+            <div>
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
