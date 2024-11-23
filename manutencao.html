@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção da Biblioteca</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h3 {
+            color: #4CAF50;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        input, select {
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manutenção da Biblioteca</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="logout.html">Sair</a>
+    </nav>
+    <main>
+        <h2>Gerenciar Materiais</h2>
+
+   
+        <section>
+            <h3>Inserir Novo Material</h3>
+            <form action="#" method="POST">
+                <label for="tipoMaterial">Tipo de Material:</label>
+                <select id="tipoMaterial" name="tipoMaterial">
+                    <option value="cd">CD</option>
+                    <option value="dvd">DVD</option>
+                    <option value="revista">Revista</option>
+                    <option value="artigo">Artigo</option>
+                    <option value="livro">Livro</option>
+                    <option value="multimidia">Multimídia</option>
+                </select>
+
+                <label for="nomeMaterial">Nome do Material:</label>
+                <input type="text" id="nomeMaterial" name="nomeMaterial" required placeholder="Nome do material">
+
+                <button class="btn" type="submit">Inserir Material</button>
+            </form>
+        </section>
+     <!-- quem pegar pra fazer decide se vai imprimir a tabela, ou algo parecido com oq o cara digitou -->
+ 
+        <section>
+            <h3>Consultar Materiais</h3>
+            <form action="#" method="POST">
+                <label for="consultaMaterial">Nome do Material:</label>
+                <input type="text" id="consultaMaterial" name="consultaMaterial" placeholder="Digite o nome do material">
+
+                <button class="btn" type="submit">Consultar</button>
+            </form>
+
+            <div id="resultadoConsulta" style="margin-top: 20px;">
+          
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Biblioteca. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
