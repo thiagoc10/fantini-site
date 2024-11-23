@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h3 {
+            color: #4CAF50;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Biblioteca - Painel do Usuário</h1>
+    </header>
+    <nav>
+        <a href="index.html">Sair</a>
+    </nav>
+    <main>
+ 
+        <section>
+            <h3>Minhas Multas</h3>
+            <button class="btn">Ver Minhas Multas</button>
+        </section>
+
+
+        <section>
+            <h3>Materiais Emprestados</h3>
+            <button class="btn">Ver Materiais Emprestados</button>
+        </section>
+
+
+        <section>
+            <h3>Consultar Disponibilidade de Item</h3>
+            <button class="btn">Consultar Disponibilidade</button>
+        </section>
+
+
+        <section>
+            <h3>Devolução de Materiais</h3>
+            <button class="btn">Devolver Materiais</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Biblioteca. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
